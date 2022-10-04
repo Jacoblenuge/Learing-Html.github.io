@@ -23,20 +23,61 @@
 
         <!-- meta http-equiv="content-type" content="text/html; charset=UTF-8" -->
         <!-- Already specified in the charset above-->
+        <style>
+            * {
+                box-sizing:border-box;
+                font-size: 2vw;
+              } 
+            //div {border: thin dotted red}
+
+
+                        
+            .header {
+                border: 1px solid green;
+                padding: 15px;
+            }
+            .flexbox {  
+                float: left;
+                padding: 15px;
+                border: 1px soild blue;
+
+            }
+            .menu {
+                width: 25%;
+                
+
+                 }
+
+            .main { 
+                width: 50%;
+            }
+               
+
+                
+
+            
+
+            .footer {}
+
+        </style>
 
         <!-- Cyber Security Note about JavaScript in Browsers-->
         <noscript>Running JavaScript is not necessary in this HTML page ... FYI: your Feature to execute scripts is turned off</noscript>
 
     </head>
     <body>
-        <header style="font-size:4vw; text-align: center">Flex Box</header>
-        <br><br><br><br>
-        <nav></nav>
-        <main> </main>
-        <aside></aside>
-        <section></section>
-        <article> Open WYSIWYG to see Flex box</article>
-        <footer></footer>
+        <div><header class="header " style="text-align: center"><h1>Flex Box lesson</h1> </header></div>
+        <div><nav class="menu flexbox"><h1>Navagation</h1></nav></div>
+        <div><main class="main flexbox"><h1>Main space</h1></main></div>
+        <div>
+            <aside class="menu flexbox">
+                <a> This is the aside space</a>
+                        <br><br><br>                     
+            </aside>
+                    </div>
+        <div><section>Section</section></div>
+        <div><article>Article</article></div>
+        <div><footer></footer></div>
     </body>
     
 
