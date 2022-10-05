@@ -4,12 +4,12 @@
         <!-- Used by the Keyboard -->
         <meta charset="utf-8">
 
-        <title>Flex Box </title>
+        <title>Flexbox</title>
 
         <!-- Used by Browser or Google Search -->
         <meta name="author" content="Jacob Engels">
         <meta name="description" content="Learning HTML by building a simple website">
-        <meta name="keywords" content=" Flex, Box, boilerplate, starter code, HTML, learning">
+        <meta name="keywords" content="boilerplate, starter code, HTML, learning, Flexbox">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Content give value for name or http-equiv attribute, text entry in string or array string -->
 
@@ -23,31 +23,39 @@
 
         <!-- meta http-equiv="content-type" content="text/html; charset=UTF-8" -->
         <!-- Already specified in the charset above-->
+
         <style>
             * {
-                box-sizing:border-box;
-                font-size: 2vw;
+                box-sizing: border-box;
+                font-size:2vw;
             }
 
-            //div {border: thin dotted red}
+            //div {border: thin dotted red;}
 
             .header {
                 border: 1px solid green;
                 padding: 15px;
             }
 
-            .flexbox {  
-                float: left;
-                padding: 15px;
-                border: 1px soild blue;
-            }
-
             .menu {
                 width: 25%;
+                float: left;
+                padding: 15px;
+                border: 1px solid blue;
             }
 
-            .main { 
+            .main {
                 width: 50%;
+                float: left;
+                padding: 15px;
+                border: 1px solid blue;
+            }
+
+            .aside {
+                width: 25%;
+                float: left;
+                padding: 15px;
+                border: 1px solid blue;
             }
 
             .footer {}
@@ -58,20 +66,22 @@
         <noscript>Running JavaScript is not necessary in this HTML page ... FYI: your Feature to execute scripts is turned off</noscript>
 
     </head>
+
     <body>
-        <div><header class="header" style="text-align: center"><h1>Flex Box lesson test</h1> </header></div>
-        <div><nav class="menu flexbox"><h1>Navagation</h1></nav></div>
-        <div><main class="main flexbox"><h1>Main space</h1></main></div>
+        <div><header class="header"><h1>Flexbox Lesson</h1></header></div>
+        <div><nav class="menu"><h1>Navigation</h1></nav></div>
+        <div><main class="main"><h1>Main Space</h1></main></div>
         <div>
-            <aside class="menu flexbox">
-                <a> This is the aside space</a>
-                        <br><br><br>                     
+            <aside class="aside">
+                <a>This is the aside space.</a>
+                <br><br><br>
             </aside>
-                    </div>
+        </div>
         <div><section>Section</section></div>
         <div><article>Article</article></div>
         <div><footer></footer></div>
     </body>
+
     
 
     <footer>
