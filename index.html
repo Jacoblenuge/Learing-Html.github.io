@@ -27,30 +27,80 @@
 
         <!-- Cyber Security Note about JavaScript in Browsers-->
         <noscript>Running JavaScript is not necessary in this HTML page ... FYI: your Feature to execute scripts is turned off</noscript>
+        <style>
+            * {
+                box-sizing: border-box;
+                font-size:2vw;
+            }
+
+            //div {border: thin dotted red;}
+
+            .header {
+                border: 2px solid white;
+                padding: 15px;
+            }
+
+            .menu {
+                width: 20%;
+                float: left;
+                padding: 15px;
+                border: 2px solid rebeccapurple;
+            }
+
+            .main {
+                width: 50%;
+                float: center;
+                padding: 15px;
+                border: 2px solid rebeccapurple;
+            }
+
+            .aside {
+                width: 25%;
+                float: right;
+                padding: 15px;
+                border: 2px solid rebeccapurple;
+            }
+
+            .footer {
+                border: 3px solid rebeccapurple;
+                padding: 15px;
+            }
+
+            .scroll {
+                width:19%;
+                float: left;
+                padding: 15px;
+                border: 3px solid rebeccapurple;
+            }
+
+        </style>
 
     </head>
 
     <body style="background-color:black">
-        <header style="color:darkgreen"><h1 style="font-size: 4vw; text-align: center;">Learing Html</h></header>
+        <header class="header" style="color:darkgreen"><h1 style="font-size: 4vw; text-align: center;">Learing Html</h></header>
         <nav>
-            <header><h1 style="font-size: 3vw;color:white" >Navagation</h1></header>
-            <section> <h1 style="font-size: 3vw;color:white">Page Hyperlinks</h1>
-                
-                <ul style= "list-style-type:  square: font-size vw2;">
+            <header ><h1 class="scroll" style="font-size: 1.7vw;color:white" >Navagation</h1></header>
+            <br><br>
+            <section> <h1 class="main" style="font-size: 3vw;color:white">Page Hyperlinks</h1>
+
+                 <main class="aside" style="color:darkviolet"><h3> What you have learned in the lessons  here,including research.</h3> </main>
+
+                <ul class="main" style= "list-style-type:  square: font-size: vw2;">
                     <li style="color:green">  Meta Data example: <a href="Child Pages/Meta Data example .html"Target="_blank"> Click Here and then open WYSIWYG to see the meta data </a>
                     <li style="color:darkviolet">  Footer Blockquote example: <a href="Child Pages/Footer Blockquote example .html"Target="_blank"> Click Here  </a>
                     <li style="color:red">  Template examplar: <a href="Child Pages/Template examplar .html"Target="_blank"> Click Here </a>
                     <li style="color:aqua">  Heading and paragraph Tags: <a href="Child Pages/Heading and paragraph .html"Target="_blank"> Click Here  </a>
                     <li style="color:gold">  Subscript and Superscript Tags: <a href="Child Pages/Subscript and Superscript Tags .html"Target="_blank"> Click Here   </a>
-                    <li style="color:crimson">  Image Lesson: <a href="Child Pages/Image Lesson .html"Target="_blank"> Click Here   </a>
-                    <li style="color:darkgreen">  Laying out DIVS (using HTML Boilerplate): <a href="Child Pages/Laying out DIVS.html"Target="_blank"> Click Here   </a>
+                    <li style="color:gray">  Image Lesson: <a href="Child Pages/Image Lesson .html"Target="_blank"> Click Here   </a>
+                    <li style="color:Blue">  Laying out DIVS (using HTML Boilerplate): <a href="Child Pages/Laying out DIVS.html"Target="_blank"> Click Here   </a>
                     <li style="color:darkorange">   What this index page might look like with Flexbox: <a href="Child Pages/Flex box.html"Target="_blank"> Click Here  </a>
                 </ul> 
                                                                                  
             </section>  
         </nav>                   
         <aside></aside>
-        <main style="color:darkviolet"><h3> What you have learned in the lessons  here,including research.</h3> </main>
+        
         <section></section>
         <article></article>
         <footer></footer>
@@ -62,7 +112,7 @@
         <!-- Date Accessed 20220919-->
      </Blockquote>
      <p>
-        <strong style=color:white>
+        <strong class="footer" style=color:white>
             “Those who vote decide nothing. Those who count the vote decide everything.”  
         </strong>
      <em>
